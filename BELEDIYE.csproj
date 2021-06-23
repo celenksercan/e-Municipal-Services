@@ -1,0 +1,160 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0F3FAD87-E25B-401E-9CA9-2C2DA4A3E237}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>BELEDIYE</RootNamespace>
+    <AssemblyName>BELEDIYE</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>true</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxInterop.AcroPDFLib">
+      <HintPath>..\..\..\..\Desktop\AxInterop.AcroPDFLib.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.DirectoryServices" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Basvuru.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Basvuru.Designer.cs">
+      <DependentUpon>Basvuru.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Beyanname.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Beyanname.Designer.cs">
+      <DependentUpon>Beyanname.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Evrak.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Evrak.Designer.cs">
+      <DependentUpon>Evrak.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Ihale.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Ihale.Designer.cs">
+      <DependentUpon>Ihale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KullaniciGiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KullaniciGiris.Designer.cs">
+      <DependentUpon>KullaniciGiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KullaniciMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="KullaniciMenu.Designer.cs">
+      <DependentUpon>KullaniciMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Mevzuat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Mevzuat.Designer.cs">
+      <DependentUpon>Mevzuat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Odeme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Odeme.Designer.cs">
+      <DependentUpon>Odeme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sorgu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sorgu.Designer.cs">
+      <DependentUpon>Sorgu.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Basvuru.resx">
+      <DependentUpon>Basvuru.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Beyanname.resx">
+      <DependentUpon>Beyanname.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Evrak.resx">
+      <DependentUpon>Evrak.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Ihale.resx">
+      <DependentUpon>Ihale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KullaniciGiris.resx">
+      <DependentUpon>KullaniciGiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="KullaniciMenu.resx">
+      <DependentUpon>KullaniciMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Mevzuat.resx">
+      <DependentUpon>Mevzuat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Odeme.resx">
+      <DependentUpon>Odeme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Sorgu.resx">
+      <DependentUpon>Sorgu.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
